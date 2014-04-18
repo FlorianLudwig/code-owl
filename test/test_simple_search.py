@@ -4,14 +4,14 @@ import shutil
 
 import codeowl
 
-BASE_PATH = os.path.dirname(__file__)
+BASE_PATH = os.path.dirname(__file__) + '/examples'
 INDEX = None
 
 
 def setup_module(module):
     global INDEX
     INDEX = codeowl.Index(tempfile.mkdtemp())
-    INDEX.index(BASE_PATH + '/example.py')
+    INDEX.index(BASE_PATH + '/world.py')
 
 
 def teardown_module(module):
