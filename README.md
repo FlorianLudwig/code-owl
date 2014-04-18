@@ -13,10 +13,8 @@ It is a new (to my knowledge) way to search source code.
 Why?
 ----
 Searching within code relies mostly on string matching or on regular expressions.
-While powerful regular expressions fail at
 
-
- I like to suggest that there are better "DSL"s than regular expressions to search code: Using Python syntax to search Python.
+I like to suggest that there are better "DSL"s than regular expressions to search code: Using Python syntax to search Python.
 
 
 Example
