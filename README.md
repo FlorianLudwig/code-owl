@@ -46,9 +46,10 @@ So lets say you are looking for the definition of the function `hello_world`. So
 
 Ok, no magic here, we find what we are looking for.  Actually most IDEs do provide a way to search for functions.  But did you notice how it did find the function declaration but did ignore the "def hello_world" part within the print two lines further down?
 
-Now what if you really want to search for a `hello_world` within a string? You don't care about the pointless variable, the useless comment nor the function just the real thing: the string that gets printed.
+Now what if you really want to search for a `hello_world` within a string? You don't care about the pointless variable, the useless comment nor the function - just the real thing: the string that gets printed.
 
 ![search "hello_world"](https://raw.githubusercontent.com/FlorianLudwig/code-owl/master/doc/search_2.png)
+(Match highlighting needs some hacking pygments)
 
 Well, you specify a string if you search a string. Note that there is exactly no difference between `'hello_world'` and `"hello_world"` as search string.  After all those are the exact same thing in Python.  Now lets look for `world`:
 
