@@ -71,6 +71,8 @@ Shockingly simple: Instead of matching string I match tokens generated from [pyg
 TODO
 ----
 
- * Fix match highlighting
- * make a usable cli
+ * recognize blocks and utilize them in search
+ * Support for non-python searches
+ * improve cli
  * write a plugin for my IDE of choice
+ * Fix match highlighting
