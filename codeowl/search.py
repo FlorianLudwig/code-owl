@@ -63,6 +63,7 @@ def path(query, source_path):  # XXX go for generator
             if fname.endswith('.py'):
                 results.extend(source_file(query, dirpath + '/' + fname))
 
+    results.sort(key=lambda r: r.diff)
     return results
 
 
@@ -118,7 +119,7 @@ class Result(object):
         if end is None:
             end = self.matches[-1]
             line_breaks = 0
-            while end < len(self.tokens) - 1 and line_breaks < 2:
+            while end < len(self.tokens) - 1 and line_breaks < 1:
                 end += 1
                 if self.tokens[end].value == '\n':
                     line_breaks += 1
