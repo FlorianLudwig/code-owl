@@ -76,3 +76,4 @@ TODO
  * improve cli
  * write a plugin for my IDE of choice
  * Fix match highlighting
+ * For search improvements, [test/todo.py](https://github.com/FlorianLudwig/code-owl/blob/master/test/todo.py)
