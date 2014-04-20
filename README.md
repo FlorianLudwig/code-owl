@@ -39,7 +39,7 @@ def hello_world():
 
 I hope nobody's short term memory forces them to actually search such small code but for this example we pretend we want to search within it.
 
-So lets say you are looking for the definition of the function `hello_world`. So lets search for `def hello_world`:
+Lets say you are looking for the definition of the function `hello_world`. You type `def hello_world`:
 
 ![search def hello_world](https://raw.githubusercontent.com/FlorianLudwig/code-owl/master/doc/search_1.png)
 
@@ -49,9 +49,10 @@ Ok, no magic here, we find what we are looking for.  Actually most IDEs do provi
 Now what if you really want to search for a `hello_world` within a string? You don't care about the pointless variable, the useless comment nor the function - just the real thing: the string that gets printed.
 
 ![search "hello_world"](https://raw.githubusercontent.com/FlorianLudwig/code-owl/master/doc/search_2.png)
-(Match highlighting needs some hacking pygments)
 
-Well, you specify a string if you search a string. Note that there is exactly no difference between `'hello_world'` and `"hello_world"` as search string.  After all those are the exact same thing in Python.  Now lets look for `world`:
+(Yeah, the match highlighting needs some work)
+
+Well, you specify a string if you search a string. Note that there is exactly no difference between `'hello_world'` and `"hello_world"` as query.  After all those are the exact same thing in Python.  Now lets look for `world`:
 
 ![search "world"](https://raw.githubusercontent.com/FlorianLudwig/code-owl/master/doc/search_3.png)
 
