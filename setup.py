@@ -9,6 +9,7 @@ setup(
     packages=['codeowl'],
     install_requires=[
         'pygments>=1.6,<2.0',
+        'clint>=0.3.4',
         'argcomplete>=0.6.6,<1.0',
     ],
     entry_points={
