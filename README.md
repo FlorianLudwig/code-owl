@@ -3,7 +3,7 @@ code-owl
 
 State
 -----
-This is a proof of concept.  There is a lot to improve.  I made a quick demo in a few hours so I can show it to others and get some discussions starting.
+This is a proof of concept.  There is a lot to improve.  I made a quick demo so I can show it to others and get some discussions starting.  You can install it via `pip install codeowl`.
 
 What?
 -----
@@ -73,7 +73,8 @@ TODO
 
  * recognize blocks and utilize them in search
  * Support for non-python searches
- * improve cli
+ * speed improvements
  * write a plugin for my IDE of choice
+ * improve cli
  * Fix match highlighting
  * For search improvements, [test/todo.py](https://github.com/FlorianLudwig/code-owl/blob/master/test/todo.py)
