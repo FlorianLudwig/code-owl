@@ -12,11 +12,6 @@ def match(query, code):
 def test_py_import():
     assert match(
         'import foo',
-        'import foo'
-    )
-
-    assert match(
-        'import foo',
         'from foo import bar'
     )
 
@@ -28,4 +23,30 @@ def test_py_import():
     assert not match(
         'import foo',
         'import bar; print foo'
+    )
+
+
+def test_py_block():
+    """Tree based matching
+
+    do semantic matching of code blocks."""
+    assert match(
+        'for: print i',
+
+        'for i in xrange(10):\n'
+        '    pass\n'
+        '    print i\n'
+    )
+
+    # same as above just a few spaces less
+    # since there are less not-maching tokens
+    # this actually scores better than the
+    # example above.  But it should not match
+    # at all.
+    assert not match(
+        'for: print i',
+
+        'for i in xrange(10):\n'
+        '    pass\n'
+        'print i\n'
     )
