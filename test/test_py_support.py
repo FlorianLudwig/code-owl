@@ -3,9 +3,7 @@ import codeowl.search
 
 def match(query, code):
     query = codeowl.search.generate_query(query)
-    print query
     code = codeowl.code.parse(code)
-    print code
     return codeowl.search.tokens(query, code, '<test>')
 
 

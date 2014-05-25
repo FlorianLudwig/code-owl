@@ -3,7 +3,8 @@ code-owl
 
 State
 -----
-This is a proof of concept.  There is a lot to improve.  I made a quick demo so I can show it to others and get some discussions starting.  You can install it via `pip install codeowl`.
+This is a proof of concept.  There is a lot to improve.  This is a quick demo so I can show it to others and get some discussion started.  You can install it via `pip install codeowl`.
+Code search is python only. Support for other languages is postponed.
 
 What?
 -----
@@ -66,7 +67,9 @@ So much today is about relevance why are most code searches sorted in order of o
 
 How?
 ----
-Shockingly simple: Instead of matching string I match tokens generated from [pygemnts](http://pygments.org/).
+The first approach was matching tokens generated from [pygemnts](http://pygments.org/). Which works remarkable well.
+But to support a little more semantics I am going for AST-based matching. This does bloat the simple code and I loose
+the language neutrality I had but it provides solution for the corner cases that actually matter.
 
 TODO
 ----

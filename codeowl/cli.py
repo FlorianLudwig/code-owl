@@ -15,15 +15,12 @@
 # PYTHON_ARGCOMPLETE_OK
 
 """code owl cli"""
-import sys
 import cStringIO
 import os
 import argparse
-import logging
 
 from clint.textui import colored
 import argcomplete
-import pkg_resources
 import pygments.formatters.terminal256
 import pygments.styles.tango
 
